@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Mission1.js"></script>
+
+</head>
+<body>
+    <p id="type">NOT FOUND</p>
+    <p id="str">NOT FOUND</p>
+
+    <script>
+        let mission = new Mission1();
+
+        mission
+            .addItem("строка").addItem(true).addItem(123)
+            .addItem({}).addItem(19241924124n);
+
+        let elementType = document.getElementById('type');
+        elementType.innerText = "Типы: " + mission.executeTypeStr();
+
+        let elementStr = document.getElementById('str');
+        elementStr.innerText = "Значения: " + mission.executeStr();
+    </script>
+</body>
+</html>

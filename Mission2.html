@@ -1,0 +1,64 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Mission2</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <form>-->
+<!--        <fieldset>-->
+<!--            <legend>Тест 2-х переменных</legend>-->
+<!--            <p>1-я: <input id="one"></p>-->
+<!--            <p>2-я: <input id="two"></p>-->
+<!--            <p><input onclick="testParams()" type="submit" value="Проверить"></p>-->
+<!--        </fieldset>-->
+<!--    </form>-->
+
+<!--    <script>-->
+<!--        function testParams() {-->
+<!--            // получение переменных-->
+<!--            const oneValue = document.getElementById("one").value;-->
+<!--            const twoValue = document.getElementById("two").value;-->
+<!--            const errorMessage = "Неверное значение параметров";-->
+
+<!--            let resultMessage = '';-->
+
+<!--            try {-->
+
+<!--                const one = Number(oneValue);-->
+<!--                const two = Number(twoValue);-->
+
+<!--                if(!isFinite(one) || !isFinite(two)) {-->
+<!--                    throw new Error(errorMessage);-->
+<!--                }-->
+
+<!--                if(one === two) {-->
+<!--                    resultMessage = 'равна второй';-->
+<!--                }-->
+
+<!--                if(one < two) {-->
+<!--                    resultMessage = 'меньше второй';-->
+<!--                }-->
+
+<!--                if(one <= two) {-->
+<!--                    resultMessage = 'меньше или равна второй';-->
+<!--                }-->
+
+<!--                if(one > two) {-->
+<!--                    resultMessage = 'больше второй';-->
+<!--                }-->
+
+<!--                if(resultMessage === '') {-->
+<!--                    throw new Error(errorMessage);-->
+<!--                }-->
+<!--            }-->
+<!--            catch (ex) {-->
+<!--                resultMessage = ex.message;-->
+<!--            }-->
+<!--            finally {-->
+<!--                alert(resultMessage);-->
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+<!--</html>-->

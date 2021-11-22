@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mission5</title>
+    <script src="Mission1.js"></script>
+</head>
+<body>
+    <p id="Value">NOT FOUND</p>
+    <p id="Max">NOT FOUND</p>
+    <p id="Min">NOT FOUND</p>
+
+    <script>
+        let mission = new Mission1();
+        for(let i = 0; i < 10; i++) {
+            mission.addItem(mission.randomInteger(0, 10));
+        }
+
+        let elementValue = document.getElementById('Value');
+        elementValue.innerText = "Values: " + mission.executeStr();
+
+        let elementMax = document.getElementById('Max');
+        elementMax.innerText = "Max: " + Math.max(...mission.getList());
+
+        let elementMin = document.getElementById('Min');
+        elementMin.innerText = "Min: " + Math.min(...mission.getList());
+    </script>
+
+</body>
+</html>

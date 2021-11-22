@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mission4</title>
+    <script src="Mission1.js"></script>
+</head>
+<body>
+
+    <p id="one">NOT FOUND</p>
+    <p id="two">NOT FOUND</p>
+
+    <script>
+        let mission = new Mission1();
+
+        let one = document.getElementById('one');
+        one.innerText = "While: " + mission.methodMission5();
+
+        let two = document.getElementById('two');
+        two.innerText = "For: " + mission.methodMission5(true);
+
+    </script>
+</body>
+</html>

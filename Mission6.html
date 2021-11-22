@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mission6</title>
+    <script src="Mission1.js"></script>
+</head>
+<body>
+    <p id="Value">NOT FOUND</p>
+    <p id="Sum">NOT FOUND</p>
+
+    <script>
+        let listValues = [];
+        let sum = 0;
+
+        for(let i = 0; i < 10; i++) {
+            const value = new Mission1().randomInteger(0, 10)
+            listValues.push(value);
+            sum += value;
+        }
+
+        let elementValue = document.getElementById('Value');
+        elementValue.innerText = "Values: " + listValues.join(' ');
+
+        let elementSum = document.getElementById('Sum');
+        elementSum.innerText = "Sum: " + sum;
+    </script>
+</body>
+</html>

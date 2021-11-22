@@ -1,0 +1,48 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Mission3</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <form>-->
+<!--            <p>Введите возраст: <input id="age"></p>-->
+<!--            <p><input onclick="testParams()" type="submit" value="Проверить"></p>-->
+<!--    </form>-->
+
+<!--    <script>-->
+<!--        function testParams() {-->
+<!--            // получение переменных-->
+<!--            const ageValue = document.getElementById("age").value;-->
+<!--            const errorMessage = "Это не число";-->
+
+<!--            let resultMessage = '';-->
+
+<!--            try {-->
+
+<!--                const age = parseInt(ageValue);-->
+
+<!--                if(isNaN(age)) {-->
+<!--                    throw new Error(errorMessage);-->
+<!--                }-->
+
+<!--                if((1 <= age) && (age <= 17)) {-->
+<!--                    resultMessage = 'Для детей';-->
+<!--                }-->
+<!--                else if((18 <= age) && (age <= 30)) {-->
+<!--                    resultMessage = 'Для молодежи';-->
+<!--                }-->
+<!--                else {-->
+<!--                    resultMessage = 'Для всех возрастов';-->
+<!--                }-->
+<!--            }-->
+<!--            catch (ex) {-->
+<!--                resultMessage = ex.message;-->
+<!--            }-->
+<!--            finally {-->
+<!--                alert(resultMessage);-->
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
+<!--</body>-->
+<!--</html>-->
